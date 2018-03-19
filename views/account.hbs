@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          {{#each user.photos}}<img src="{{ value }}" alt="Photo of {{ user.displayName }}.">{{/each}}
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">{{ user.displayName }}</p>
+        <p class="subtitle is-6">@{{ user.username }}</p>
+      </div>
+    </div>
+    <div class="content">
+      <ul>
+        <li>ID: {{ user.id }}</li>
+        {{#if user._json.description }}
+          <li>Description: {{ user._json.description }}</li>
+        {{/if}}
+        {{#if user._json.location }}
+          <li>Location: {{ user._json.location }}</li>
+        {{/if}}
+        {{#if user.emails }}        
+        <!-- <li>Email: {{#each user.emails}} {{ value }} {{/each}}</li> -->
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</div>
