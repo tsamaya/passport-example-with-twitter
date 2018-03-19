@@ -13,8 +13,8 @@ First, create an application at [https://apps.twitter.com](https://apps.twitter.
 
 create a `.env` file with:
 ```
-CONSUMER_KEY=YOUR-TWITTER-CONSUMER-KEY
-CONSUMER_SECRET=YOUR-TWITTER-CONSUMER-SECRET
+TWITTER_CONSUMER_KEY=YOUR-TWITTER-CONSUMER-KEY
+TWITTER_CONSUMER_SECRET=YOUR-TWITTER-CONSUMER-SECRET
 ```
 
 #### Install dependencies
